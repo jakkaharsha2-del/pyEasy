@@ -1,4 +1,4 @@
-from google.genai import genai
+import google.genai as genai
 from google.genai import types
 import streamlit as st
 import json
