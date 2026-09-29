@@ -1,5 +1,5 @@
 import json
-import google-generativeai as gai
+import google.generativeai as gai
 import streamlit as st
 from google import genai
 from google.genai import types
