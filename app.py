@@ -8,7 +8,7 @@ from twilio.rest import Client as TwilioClient
 from prompts import SUMMARY_REQUEST_PROMPT, SYSTEM_PROMPT, WELCOME_MESSAGE_TEMPLATE
  
 MODEL_NAME = "gemini-3.5-flash"
-st.set_page_config(page_title="MacroSnap", page_icon="🥗")
+st.set_page_config(page_title="MacroSnap", page_icon="🐍")
  
 GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 TWILIO_ACCOUNT_SID = st.secrets["TWILIO_ACCOUNT_SID"]
