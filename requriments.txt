@@ -2,3 +2,4 @@
 streamlit
 twilio
 google-genai
+google-generativeai
