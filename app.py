@@ -78,7 +78,7 @@ def send_whatsapp(to_number, user_name, summary):
 # Step 1: onboarding
 if "onboarded" not in st.session_state:
     st.title("I'm PyEasy 🐍")
-    st.caption("Snap it. Track it. Text yourself the results.")
+    st.caption(" beginner-friendly way @")
     with st.form("onboarding_form"):
         name = st.text_input("Your name")
         whatsapp_number = st.text_input(
