@@ -8,7 +8,7 @@ from twilio.rest import Client as TwilioClient
 from prompts import SUMMARY_REQUEST_PROMPT, SYSTEM_PROMPT, WELCOME_MESSAGE_TEMPLATE
  
 MODEL_NAME = "gemini-3.5-flash"
-st.set_page_config(page_title="MacroSnap", page_icon="🐍")
+st.set_page_config(page_title="PyEasy", page_icon="🐍")
  
 GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 TWILIO_ACCOUNT_SID = st.secrets["TWILIO_ACCOUNT_SID"]
@@ -84,7 +84,7 @@ if "onboarded" not in st.session_state:
         whatsapp_number = st.text_input(
             "WhatsApp number (with country code)",
             placeholder="+91XXXXXXXXXX",
-            help="This is the number MacroSnap will text your summary to.",
+            help="explain it in an easy, beginner-friendly way. No complicated terms, no ""confusing explanations.",
         )
         submitted = st.form_submit_button("Let's go 🚀")
     if submitted:
